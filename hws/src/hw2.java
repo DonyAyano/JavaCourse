@@ -37,21 +37,23 @@ public class hw2 {
 
     public static void p1() {
         int[] mas1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-        for (int i : mas1) {
-            if (i == 1)
-                System.out.print("0 ");
-            else
-                System.out.print("1 ");
+        for (int i = 0 ; i < mas1.length ; i++) {
+            if (mas1[i] == 1) {
+                mas1[i] = 0;
+                System.out.print(mas1[i] + " ");
+            }
+            else {
+                mas1[i] = 1;
+                System.out.print(mas1[i] + " ");
+            }
         }
     }
 
     public static void p2() {
         int[] mas2 = new int[8];
-        int j = 0;
         for (int i = 0; i < mas2.length; i++) {
-            mas2[i] = j;
+            mas2[i] = i*3;
             System.out.print(mas2[i] + " ");
-            j += 3;
         }
     }
 
