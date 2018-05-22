@@ -17,7 +17,7 @@
         Играем до тех пор, пока игрок не отгадает слово
         Используем только маленькие буквы
  */
-
+kl
 import java.util.Scanner;
 import java.util.Random;
 
