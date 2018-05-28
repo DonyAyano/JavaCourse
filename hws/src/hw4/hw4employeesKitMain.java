@@ -1,9 +1,9 @@
 package hw4;
 
-import java.util.Scanner;
+        import java.util.Scanner;
 
 public class hw4employeesKitMain {
-    public void kitItself() {
+    public void main(String[] args) {
         hw4employees[] kitItem = new hw4employees[5];
         Scanner Name = new Scanner(System.in);
         Scanner Post = new Scanner(System.in);
@@ -21,6 +21,11 @@ public class hw4employeesKitMain {
             int age = Age.nextInt();
             kitItem[i] = new hw4employees(name, post, email, holla, wage, age);
             System.out.println(name + ", " + ", " + post + ", " + email + ", " + holla + ", " + wage + ", " + age);
+        }
+
+        for (hw4employees item: kitItem){
+            if (item.age > 40)
+                item.print();
         }
     }
 }
