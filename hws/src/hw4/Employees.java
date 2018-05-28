@@ -1,6 +1,6 @@
 package hw4;
 
-public class hw4employees {
+public class Employees {
     String name;
     String post;
     String email;
@@ -8,7 +8,7 @@ public class hw4employees {
     long wage;
     int age;
 
-    public hw4employees(String _name, String _post, String _email, String _holla, long _wage, int _age){
+    public Employees(String _name, String _post, String _email, String _holla, long _wage, int _age){
         this.name = _name;
         this.post = _post;
         this.email = _email;
