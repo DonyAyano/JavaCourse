@@ -8,16 +8,16 @@ public class Employees {
     long wage;
     int age;
 
-    public Employees(String _name, String _post, String _email, String _holla, long _wage, int _age){
-        this.name = _name;
-        this.post = _post;
-        this.email = _email;
-        this.holla = _holla;
-        this.wage = _wage;
-        this.age = _age;
+    public Employees(String name, String post, String email, String holla, long wage, int age){
+        this.name = name;
+        this.post = post;
+        this.email = email;
+        this.holla = holla;
+        this.wage = wage;
+        this.age = age;
     }
     public void print(){
-        System.out.print(this.name + " " + this.post + " " + this.email + " " + this.holla + " " + this.wage + " " + this.age );
+        System.out.print(name + " " + post + " " + email + " " + holla + " " + wage + " " + age );
         System.out.println();
     }
 }

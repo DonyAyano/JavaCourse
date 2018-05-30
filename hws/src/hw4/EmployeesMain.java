@@ -18,7 +18,7 @@ package hw4;
 import java.util.Scanner;
 
 public class EmployeesMain {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Employees[] kit = new Employees[5];
         Scanner _name = new Scanner(System.in);
         Scanner _post = new Scanner(System.in);
