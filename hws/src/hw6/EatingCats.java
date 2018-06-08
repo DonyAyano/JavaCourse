@@ -13,7 +13,7 @@ public class EatingCats {
 
     public boolean eat(Plate p) {
         p.decreaseFood(appetite);
-        if (p.out.equals("Not enough food. Add some")) return false;
+        if (p.status.equals("Not enough food. Add some")) return false;
         else return true;
     }
 }

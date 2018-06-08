@@ -12,19 +12,19 @@ import java.util.Scanner;
  */
 public class MainClass {
         public static void main(String[] args) {
-            EatingCats[] cat = new EatingCats[3];
+            EatingCats[] cats = new EatingCats[3];
             Scanner catName = new Scanner(System.in);
             Scanner catAppetite = new Scanner(System.in);
             for (int i = 0; i < 3; i++){
                 String name = catName.nextLine();
                 int  appetite = catAppetite.nextInt();
-                cat[i] = new EatingCats(name, appetite);
+                cats[i] = new EatingCats(name, appetite);
             }
             Plate plate = new Plate(20);
             plate.info();
-            System.out.println(cat[1].eat(plate));
+            System.out.println(cats[1].eat(plate));
             plate.addFood(10);
-            System.out.println(cat[2].eat((plate)));
+            System.out.println(cats[2].eat((plate)));
             plate.info();
         }
 }
