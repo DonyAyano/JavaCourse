@@ -23,7 +23,7 @@ public class MainClass {
 
        // Course course = new Course(circle1,circle2,circle3);
 
-        course.doIt(teamAutist);
+       // course.doIt(teamAutist);
         teamAutist.showResults();
 
     }
