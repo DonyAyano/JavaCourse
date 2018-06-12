@@ -1,4 +1,4 @@
-package JCLVL2;
+package JCLVL2.hw1.hw1;
 
 public abstract class Animal implements Participant {
         protected String type;

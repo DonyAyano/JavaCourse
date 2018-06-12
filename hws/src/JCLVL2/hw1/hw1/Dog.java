@@ -1,4 +1,4 @@
-package JCLVL2;
+package JCLVL2.hw1.hw1;
 
 public class Dog extends Animal {
     public Dog(String name) {

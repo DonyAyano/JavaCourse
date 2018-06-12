@@ -55,7 +55,7 @@ public class GameActionListener implements ActionListener {
                 y = rnd.nextInt(GameBoard.dimension);
             }
             while(!board.isTurnable(x, y));
-
+            button.setText(Character.toString(board.getGame().getCurrentPlayer().getPlayerSign()));
             board.updateGameField(x, y);
 
             int cellIndex = GameBoard.dimension * x + y;

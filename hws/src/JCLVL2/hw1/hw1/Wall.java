@@ -1,4 +1,4 @@
-package JCLVL2;
+package JCLVL2.hw1.hw1;
 
 public class Wall extends Obstacle {
     private int height;
