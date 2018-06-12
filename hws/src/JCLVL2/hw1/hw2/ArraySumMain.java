@@ -1,4 +1,5 @@
 package JCLVL2.hw1.hw2;
+
 /*
 1. Напишите метод, на вход которого подаётся двумерный строковый массив размером 4х4, при подаче массива другого размера
 необходимо бросить исключение MyArraySizeException.
@@ -10,9 +11,9 @@ package JCLVL2.hw1.hw2;
  */
 public class ArraySumMain {
     public static void main(String[] args) {
-        try{
+        try {
             Array arr = new Array(new String[][]{
-                    {"1", "1", "1", "2"},
+                    {"1", "1", "1", "1"},
                     {"1", "1", "1", "1"},
                     {"1", "1", "1", "1"},
                     {"1", "1", "1", "1"}
@@ -20,12 +21,11 @@ public class ArraySumMain {
 
             arr.Summation();
         }
-        catch (MyArraySizeException e){
-            System.err.println("Size exception found. Fix it");
+        catch (MyArraySizeException | MyArrayDataException e){
+            e.printStackTrace();
+            return;
         }
-        catch (MyArrayDataException e){
-            System.err.println("Data exception found. Fix it");
-        }
+
         System.out.println("No exeptions found. GGWP");
     }
 }

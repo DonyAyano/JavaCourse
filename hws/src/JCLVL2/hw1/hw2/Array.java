@@ -19,8 +19,8 @@ public class Array {
             for (int i = 0; i < array.length; i++){
                 for (int j = 0; j < array[i].length; j++){
                     try{
-                        int arraySum = Integer.parseInt(array[i][j]);
-                        sum += arraySum;
+                        int element = Integer.parseInt(array[i][j]);
+                        sum += element;
                     }
                     catch (NumberFormatException e){
                         throw new MyArrayDataException (i, j);
